@@ -13,5 +13,9 @@ function minCoins() {
   const quarter = 25;
   let change = changeOwed(cashOwed);
   let minCoins = 0;
+  while (change >= quarter) {
+    change = change - quarter;
+    minCoins++;
+  }
 }
 // console.log(` The smallest amount of coins I can return is: ${minCoins()}`)
