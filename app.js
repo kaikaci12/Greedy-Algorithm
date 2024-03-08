@@ -11,5 +11,7 @@ function minCoins() {
   const nickel = 5;
   const dime = 10;
   const quarter = 25;
+  let change = changeOwed(cashOwed);
+  let minCoins = 0;
 }
 // console.log(` The smallest amount of coins I can return is: ${minCoins()}`)
