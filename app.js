@@ -17,5 +17,18 @@ function minCoins() {
     change = change - quarter;
     minCoins++;
   }
+  while (change >= dime) {
+    change = change - dime;
+    minCoins++;
+  }
+  while (change >= nickel) {
+    change = change - nickel;
+    minCoins++;
+  }
+  while (change >= penny) {
+    change = change - penny;
+    minCoins++;
+  }
+  return minCoins;
 }
 // console.log(` The smallest amount of coins I can return is: ${minCoins()}`)
