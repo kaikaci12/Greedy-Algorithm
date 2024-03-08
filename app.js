@@ -6,5 +6,10 @@ function changeOwed(cash) {
   const change = 100 - cash;
   return change;
 }
-function minCoins() {}
+function minCoins() {
+  const penny = 1;
+  const nickel = 5;
+  const dime = 10;
+  const quarter = 25;
+}
 // console.log(` The smallest amount of coins I can return is: ${minCoins()}`)
